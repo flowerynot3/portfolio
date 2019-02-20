@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSSLICK Inspiration - Portfolio theme(준비파일)</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  
+  <!-- 사용자 CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+
+  <!-- 사용자 JavaScript -->
+  <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="container-fluid">
+            <div class="logo">
+              <h1>Jeong Seo Woo</h1>
+              <br>
+              <p>안녕하세요!<br>
+                저는 정서우입니다. <br>
+                인생에서 가장 중요한것은 희망이라고 생각하며<br>
+                안일하게 멈춰있지 않고 더 좋은것을 찾아나가기위해<br>
+                도전하고 배우는것을 좋아합니다.<br>
+                </p>
+            </div>
+            <!--상단 메뉴 네비게이션-->
+
+            <script type="text/javascript"> 
+              function scroll_follow( id )
+              {
+                $(window).scroll(function( )  //스크롤이 움직일때마다 이벤트 발생
+                { 
+                    var position = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다.
+                    $( id ).stop().animate({top:position+"px"}, 1); //해당 오브젝트 위치값 재설정
+                 });
+              }
+               scroll_follow( "#scroll" );
+              //스크롤이 생기도록 <br> 을 여러게 넣은 부분..
+              $(document).ready(function(){ for( var i=0; i<200; i++ ) {$('#brr').html($('#brr').html() +"<br>" + i);} });
+              </script> 
+
+            <div id="scroll">
+              <ul>
+                <li><a href="#" class="top">Home</a></li>
+                <li><a href="#about" class="top">Strong Point</a></li>
+                <li><a href="#skills" class="top">About Me</a></li>
+                <li><a href="#photo" class="top">Portfolio</a></li>
+                <li><a href="#contact" class="top">Contact Me</a></li>
+              </ul>
+            </div>
+            <!--모바일 토글버튼-->
+            <a href="#" id="btn-toggle">
+              <i class="fas fa-bars fa-2x"></i>
+              <!--fas fa-bars이건 폰트어썸이고 여기에 fa-2x를 적으면 아이콘이 2배로 커짐 / css에서 해도되지만 이번엔 html에 적었음-->
+            </a>
+            
+          </header>
+
+          <section id="about"> <!--컨테이너는 부트스트랩에서 사용하는 것 1200px로 설정되어있을 것-->
+            <h1>Strong Point</h1>
+            <article class="row">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-md-4">
+                              <i class="fas fa-fist-raised fa-5x icon1"
+                              ></i>
+                              <h4>준비</h4>
+                              <p>기회가 왔을 때 잡을 수 있도록<br>
+                              늘 기반을 튼튼히 다져놓고 있습니다</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fas fa-comments fa-5x icon2"
+                                ></i>
+                                <h4>경청</h4>
+                              <p>늘 배우는 자세로 경청하며<br>
+                              영양가 있는 피드백을 하려 노력합니다</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fas fa-battery-full fa-5x icon3"></i>
+                                <h4>에너지</h4>
+                              <p>열정을 가지고서 주변사람들에게<br>
+                              좋은 에너지를 전달하려 하고 있습니다</p>
+                            </div>
+                    </div>
+                </div>
+            </article>
+            <!--행을 먼저 만들고 안에 칼럼을 넣은 것-->
+          </section>
+
+          <section id="skills" class="container"> <!--컨테이너는 부트스트랩에서 사용하는 것 1200px로 설정되어있을 것-->
+            <h1>About Me</h1>
+            <article class="row">
+                <div class="col-md-6 about">
+                  <img src="images/face1.png" alt="" class="me">
+                  <p>UI/UX Designer</p>
+                  <ul>
+                    <li>정서우 (Jeong Seo Woo)</li>
+                    <li>1995.09.13</li>
+                  </ul>
+                   
+                  </div>
+                <div class="col-me-6">
+                    <img src="images/skills4.png"
+                    alt="skills images"
+                    class="img-responsive">
+                  </div>
+              
+            <!--행을 먼저 만들고 안에 칼럼을 넣은 것-->
+          </section>
+          <!-- sns이미지 갤러리  -->
+          <section id="photo">
+              <h1><span>Portfolio</span></h1>
+              <span class="line line-1"></span>
+              <p>SNS컨텐츠 디자인</p>
+              <div class="photo-list"></div>
+              <div class="photo-list2">
+              <img src="images/photo01.png" alt="sns" width="300" height="300">
+              <img src="images/photo02.png" alt="sns" width="300" height="300">
+              <img src="images/photo03.png" alt="sns" width="300" height="300">
+            </div>
+            <div class="photo-list2">
+                <img src="images/photo05.png" alt="sns" width="300" height="300">
+                <img src="images/photo06.png" alt="sns" width="300" height="300">
+                <img src="images/photo09.png" alt="sns" width="300" height="300">
+              </div>
+            <span class="line line-2"></span>
+            <p>포스터 디자인</p>
+              <div class="photo-list3">
+                  <img src="images/poster01.jpg" alt="poster" width="240" height="350">
+                  <img src="images/poster02.png" alt="poster" width="240" height="350">
+                  <img src="images/poster03.png" alt="poster" width="240" height="350">
+            </div>
+            <span class="line line-2"></span>
+            <p>베너 디자인</p>
+              <div class="photo-list3">
+                  <img src="images/banner01.png" alt="banner" width="650"><br>
+                  <img src="images/banner02.png" alt="banner" width="650"><br>
+                  <img src="images/banner03.png" alt="banner" width="650"><br>
+                  <img src="images/banner05.jpg" alt="banner" width="650">
+            </div>
+            <span class="line line-2"></span>
+            <p>모바일 UI UX 디자인</p>
+              <div class="photo-list3">
+                  <img src="images/caring.png" alt="mobile" width="473" height="414.5">
+                  <img src="images/caring2.PNG" alt="mobile" width="473" height="414.5">
+            </div>
+            <span class="line line-2"></span>
+            <p>명함 디자인</p>
+              <div class="photo-list3">
+                  <img src="images/card1.png" alt="card" width="400">
+                  <img src="images/card02.png" alt="card" width="400">
+            </div>
+            <span class="line line-2"></span>
+            <p>웹사이트 리뉴얼</p>
+            <p class="re">- 아틀라스 헬스클럽 -</p>
+            <article class="row" style="margin: 0 auto;" >
+                <div class="col-md-4 about">
+                    <img src="images/0003.png" alt="card" width="300"
+                     style="padding-top : 200px; box-shadow: none;"  >
+                    <p id="atlas" style="padding-top : 50px;"><a class="homepage" href="http://gharam12.dothome.co.kr/atlas/index.html" style="color:black; background:#7cc576; padding:10px; text-decoration: none">Go To Homepge</a></p>
+                   
+                  </div>
+                <div class="col-me-4">
+                    <ul>
+                      <li><img src="images/at1.JPG" alt="" width="300"></li>
+                      <li><img src="images/at2.JPG" alt="" width="300"></li>
+                      <li><img src="images/at3.JPG" alt="" width="300"></li>
+                      <li><img src="images/at4.JPG" alt="" width="300"></li>
+                      <li><img src="images/at5.JPG" alt="" width="300"></li>
+                    </ul>
+                  </div>
+                <div class="col-me-4">
+                  <ul>
+                    <li><img src="images/at6.JPG" alt="" width="300"></li>
+                    <li><img src="images/at7.JPG" alt="" width="300"></li>
+                    <li><img src="images/at8.JPG" alt="" width="300"></li>
+                    <li><img src="images/at9.JPG" alt="" width="300"></li>
+                    <li><img src="images/at10.JPG" alt="" width="300"></li>
+                  </ul>
+                </div>
+                </article>
+                <p class="re">- 교촌치킨 -</p>
+                <article class="row" style="margin: 0 auto;" >
+                  <div class="col-md-4 about">
+                      <img src="images/kc01.png" alt="card" width="300"
+                       style="padding-top : 200px ; box-shadow: none;" >
+                      <p id="atlas" style="padding-top : 50px;"><a class="homepage" href="http://gharam12.dothome.co.kr/KC" style="color:black; background:#7cc576; padding:10px; text-decoration: none">Go To Homepge</a></p>
+                     
+                    </div>
+                  <div class="col-me-4">
+                      <ul>
+                        <li><img src="images/kc02.png" alt="" width="300"></li>
+                        <li><img src="images/kc03.png" alt="" width="300"></li>
+                        <li><img src="images/kc04.png" alt="" width="300"></li>
+                      </ul>
+                    </div>
+                  <div class="col-me-4">
+                    <ul>
+                      <li><img src="images/kc05.png" alt="" width="300"></li>
+                      <li><img src="images/kc06.png" alt="" width="300"></li>
+                      <li><img src="images/kc07.png" alt="" width="300"></li>
+                      <li><img src="images/kc08.png" alt="" width="300"></li>
+                    </ul>
+                  </div>
+                  </article>
+          <span class="line line-2"></span>
+            <p>기타 작업물</p>
+              <div class="photo-list3">
+                  <img src="images/etc1.jpg" alt="card" width="400">
+                  <img src="images/etc2.PNG" alt="card" width="400">
+            </div>
+
+
+
+            <section id="contact"> <!--컨테이너는 부트스트랩에서 사용하는 것 1200px로 설정되어있을 것-->
+              <h1>Contact Me</h1>
+              <i class="fas fa-city fa-3x"></i>
+              <p>제가 짊어진 무게만큼 책임감있게 일을 해나가고있습니다<br>
+              제가 가진능력과 앞으로 배워나갈 능력들을 모두 합쳐<br>
+              큰 시너지를 내 회사에 도움이 될 준비가 되어있습니다<br>
+              가치있는 인재가 되겠습니다 저는 자신있습니다</p>
+
+              <ul>
+                <li>Phone : 010-4124-2512</li>
+                <li>E-Mail : evesummer@naver.com</li>
+              </ul>
+              
+              
+            </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+/*모바일(~태블릿)*/
+@media (max-width: 767px){
+    header #gnb{
+        display: none; /* 메뉴가 작은 화면에선 안보이는 것 */
+        background: rgba(0,0,0,0.3);
+        margin-top: 2.6em;
+        padding: 10px;
+    }
+    header #gnb li{
+        margin-top: 10px;
+    }
+    header #gnb li a{
+        color : #000;
+    }
+    /* 모바일에선 글씨를 좀 키워야 할 필요가 있기때문에 변경해줌 */
+    header .logo h1{
+        font-size: 14vw; /* vw는  가변단위 로써 8퍼센트를 유지한다는 뜻 - 모바일은 너무 작아져서 불편할 수 있음 */
+      }
+      header .logo p{
+        font-size: 4vw; /* 세로는 vh를 씀 */
+        font-weight: bold;
+      }
+      #btn-toggle{ /* 모바일화면으로 전환될 때 나타남*/
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: #000;
+      }
+      header{
+          width: 100%;
+      }
+      #about{
+         border: 1px solid red;
+         height: 950px;
+      }
+      #scroll{
+          display: none;
+          
+      }
+      
+}
+
+/* 중간크기 이상 ~ pc */
+@media (min-width : 768px){
+    header #gnb{
+        display: inline;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color : #000 !important;
+        text-align: center;
+    }
+    header #gnb ul{
+        display: inline;
+    }
+    #btn-toggle{ /* pc화면으로 전환될 때 사라짐 */
+        display: none;
+    }
+    #scroll{
+        position: absolute;
+        right : 0px;
+        text-align: center;
+        background: #7cc576;
+        padding: 10px;
+        margin-top: 0px;
+        z-index: 99;
+    }
+    
+}
+
+
+/*#gnb { background-color:#f9f9f9; 
+    border:2px solid #000;
+    position: fixed;
+    right: 50%;
+    top: 180px;
+    margin-right: -615px;
+    text-align:center;
+    width:70px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+#gnb div:nth-child(1){
+border:2px solid #ff3535;
+border-radius: 8px;
+}
+#gnb div:nth-child(2){
+border:2px solid #ff3535;
+border-radius: 8px;
+}
+#gnb div:nth-child(3){
+border:2px solid #ff3535;
+border-radius: 8px;
+}*/
